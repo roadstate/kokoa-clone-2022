@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat </title>
+    <title>chat w/one.bean </title>
 </head>
-<body>
-    <div class="status-bar">
+<body id="chat-screen">
+    <div class="status-bar chat-status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
@@ -24,49 +24,40 @@
             <i class="fas fa-bolt"></i>
         </div>   
     </div>
-    <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
+
+    <header class="alt-header">
+       <div class="alt-header__column">
+        <a href="chats.html">  
+        <i class="fas fa-angle-left fa-2x"></i>
+        </a>  
+       </div>
+       <div class="alt-header__column">
+            <h1 class="alt-header__title">One.Bean</h1>
+       </div>
+       <div class="alt-header__column">
             <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="far fa-comment-dots fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <span><i class="fas fa-cog fa-lg"></i></span>
-            <span class="reddot"></span>
-        </div>
+            <span><i class="fas fa-bars fa-lg"></i></span>
+       </div>
     </header>
 
-    
-    <main class="main-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="https://file.mk.co.kr/meet/neds/2021/09/image_readtop_2021_894448_16317560574787074.jpg"
-                    class="user-component__avatar "/>
-                <div class="user-component__text">
-                    <h4 class="user-component__title">One.Bean</h4>
-                    <h6 class="user-component__subtitle">Hi~!</h6>
+    <main class="main-chat">
+        <div class="chat__timestamp">
+            Tuesday,April 19,2022
+        </div>
+        <div class="message-row">
+            <img src="https://file.mk.co.kr/meet/neds/2021/09/image_readtop_2021_894448_16317560574787074.jpg">
+            <div class="message-row__content">
+                <span class="message__author">One.bean</span>
+                <div class="message__info">
+                    <span class="message__bubble">Hi~!</span>
+                    <span class="message__time">09:02</span>
                 </div>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__time">09:02</span>
-                <div class="badge">1</div>
-            </div>
         </div>
-        
-        
-    </main>
 
-    
-  <nav class="nav">
-      <ul class="nav__list">
-          <li class="nav__btn"><a class="nav__link" href="friends.html">
-              <i class="far fa-user fa-2x"></i></a>
-          <li class="nav__btn"><a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">1</span><i class="fas fa-comment fa-2x"></i></a>
-          <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i> </a></li>
-          <li class="nav__btn"><a class="nav__link" href="more.html">
-            <span class="nav__homework"></span><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
-      </ul>
-  </nav>
+    </main>
+   
+
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
